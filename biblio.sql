@@ -33,13 +33,6 @@ CREATE TABLE `emprunter` (
   `DataEmprunt` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `emprunter`
---
-
-INSERT INTO `emprunter` (`CodeEtudiant`, `CodeLivre`, `DataEmprunt`) VALUES
-(2, 12, '2022-09-16'),
-(130518452, 1, '2022-09-16');
 
 -- --------------------------------------------------------
 
@@ -55,13 +48,8 @@ CREATE TABLE `etudiant` (
   `Classe` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `etudiant`
---
 
-INSERT INTO `etudiant` (`CodeEtudiant`, `Nom`, `Prenom`, `Adresse`, `Classe`) VALUES
-(2, 'ayoub', 'elhessenoui', 'mhamid', 'dev102'),
-(130518452, 'ouahki', 'mohamed', 'agadir', 'dev102');
+
 
 -- --------------------------------------------------------
 
@@ -76,14 +64,6 @@ CREATE TABLE `livre` (
   `DateEdition` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `livre`
---
-
-INSERT INTO `livre` (`CodeLivre`, `Titre`, `Auteur`, `DateEdition`) VALUES
-(1, 'i missed aprayer', 'isslam gamal', '2022-06-17'),
-(3, 'livre3', 'livre3', '2022-06-20'),
-(12, 'la boit', 'ahmed', '2022-06-23');
 
 -- --------------------------------------------------------
 
@@ -98,16 +78,7 @@ CREATE TABLE `users` (
   `password` varchar(100) CHARACTER SET latin1 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `users`
---
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'mohamed', 'mohamed@gmail.com', 'mohamed'),
-(2, 'ouahki', 'ouahki@gmail.com', 'ouahki'),
-(5, 'jawad', 'jawad@gmail.com', 'jawad'),
-(7, 'test', 'test@gmail.com', 'test'),
-(8, 'abde', 'abde@gmail.com', '12345');
 
 --
 -- Index pour les tables déchargées
